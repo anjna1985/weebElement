@@ -3,6 +3,9 @@ package sampleTestNG;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
@@ -35,9 +38,10 @@ public class SampleTest {
 	public void verifylink() {
 		System.out.println("Check link on page");
 		WebElement link=driver.findElement(By.xpath("//a[contains(text(),'REGISTER')]"));
-		Assert.assertTrue(link.isDisplayed(), "Image is displaying");
+		AssertJUnit.assertTrue(link.isDisplayed(), "Image is displaying");
 	}
 	
+	@AfterMethod
 	@AfterMethod
 	@AfterTest
 	public void tearDown() {
