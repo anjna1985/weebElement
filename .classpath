@@ -28,6 +28,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/14012/Downloads/maven-surefire-plugin-3.0.0-M5.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

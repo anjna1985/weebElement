@@ -38,10 +38,9 @@ public class SampleTest {
 	public void verifylink() {
 		System.out.println("Check link on page");
 		WebElement link=driver.findElement(By.xpath("//a[contains(text(),'REGISTER')]"));
-		AssertJUnit.assertTrue(link.isDisplayed(), "Image is displaying");
+		Assert.assertTrue(link.isDisplayed(), "Image is displaying");
 	}
 	
-	@AfterMethod
 	@AfterMethod
 	@AfterTest
 	public void tearDown() {
